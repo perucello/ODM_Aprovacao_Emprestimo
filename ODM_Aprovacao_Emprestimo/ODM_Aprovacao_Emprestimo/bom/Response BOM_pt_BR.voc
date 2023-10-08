@@ -1,0 +1,13 @@
+# Vocabulary Properties
+uuid = 1653e8ca-8cfe-47df-a909-8763ce5bc62a
+
+# com.odm.educaciencia.emprestimo.Response
+com.odm.educaciencia.emprestimo.Response#concept.label = response
+com.odm.educaciencia.emprestimo.Response.aprovado#phrase.action = colocar à {aprovado} que {this} é aprovado
+com.odm.educaciencia.emprestimo.Response.aprovado#phrase.navigation = {this} é aprovado
+com.odm.educaciencia.emprestimo.Response.observacaoResponse#phrase.action = atribuir o observacao response {this,PARTITIVE_ARTICLE} a {observacao response}
+com.odm.educaciencia.emprestimo.Response.observacaoResponse#phrase.navigation = {observacao response} {this,PARTITIVE_ARTICLE}
+com.odm.educaciencia.emprestimo.Response.riscoResponse#phrase.action = atribuir o risco response {this,PARTITIVE_ARTICLE} a {risco response}
+com.odm.educaciencia.emprestimo.Response.riscoResponse#phrase.navigation = {risco response} {this,PARTITIVE_ARTICLE}
+com.odm.educaciencia.emprestimo.Response.statusResponse#phrase.action = atribuir o status response {this,PARTITIVE_ARTICLE} a {status response}
+com.odm.educaciencia.emprestimo.Response.statusResponse#phrase.navigation = {status response} {this,PARTITIVE_ARTICLE}

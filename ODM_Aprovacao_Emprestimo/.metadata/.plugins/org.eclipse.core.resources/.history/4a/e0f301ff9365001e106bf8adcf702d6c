@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="Run" ruleflowName="Fluxo_ODM" targetRuleProjectName="ODM_Aprovacao_Emprestimo">
+  <name>Run</name>
+  <uuid>0a3f0822-cb45-48d2-966a-c5e6ff1e3a99</uuid>
+  <referencedVariables variableName="Request" variableSetName="variaveis">
+    <variableSet href="../regras/variaveis.var#2f07727b-7cc6-416e-a810-a324bdb37d6b"/>
+  </referencedVariables>
+  <referencedVariables variableName="Response" variableSetName="variaveis" direction="OUT">
+    <variableSet href="../regras/variaveis.var#2f07727b-7cc6-416e-a810-a324bdb37d6b"/>
+  </referencedVariables>
+  <ruleflow href="../regras/Fluxo/Fluxo_ODM.rfl#5a748cce-16d8-49bf-bfe5-b418a8f35e2f"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="Run_extractor" validator="Validador Padrão"/>
+  <targetRuleProject href="../../ODM_Aprovacao_Emprestimo#fdf99f49-cbfc-4be6-8bc2-0a6a19af8b51"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

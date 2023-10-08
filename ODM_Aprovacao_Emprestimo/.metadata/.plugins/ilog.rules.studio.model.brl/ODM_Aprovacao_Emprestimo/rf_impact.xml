@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/GETTER#0">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/GETTER#0">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/GETTER#0">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93">
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/GETTER#0"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="Response">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </param>
+        <param id="request_validaDados">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93">
+            <param id="Response"/>
+            <param id="request_validaDados"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="f08a6841-4b13-4f61-9170-983efca461ca">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/ODM_Aprovacao_Emprestimo/bom/Response BOM_pt_BR.voc" id="1653e8ca-8cfe-47df-a909-8763ce5bc62a">
+            <rule id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/ODM_Aprovacao_Emprestimo/regras/Fluxo_ODM.rfl" id="d60afb30-969b-4466-92c7-1b9b9fa44a93"/>
+        <resource file="/ODM_Aprovacao_Emprestimo/regras/variaveis.var" id="f08a6841-4b13-4f61-9170-983efca461ca"/>
+    </resourceTable>
+</impactTables>

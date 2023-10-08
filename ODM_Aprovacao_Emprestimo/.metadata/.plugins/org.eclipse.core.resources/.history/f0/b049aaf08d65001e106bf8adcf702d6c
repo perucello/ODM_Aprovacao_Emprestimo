@@ -1,0 +1,11 @@
+# Vocabulary Properties
+uuid = 6ec3b28a-3036-4cd1-85cc-ef49beb7cee4
+
+# com.odm.educaciencia.emprestimo.Request
+com.odm.educaciencia.emprestimo.Request#concept.label = request
+com.odm.educaciencia.emprestimo.Request.idadeSolicitante#phrase.action = atribuir o idade solicitante {this,PARTITIVE_ARTICLE} a {idade solicitante}
+com.odm.educaciencia.emprestimo.Request.idadeSolicitante#phrase.navigation = {idade solicitante} {this,PARTITIVE_ARTICLE}
+com.odm.educaciencia.emprestimo.Request.nomeSolicitante#phrase.action = atribuir o nome solicitante {this,PARTITIVE_ARTICLE} a {nome solicitante}
+com.odm.educaciencia.emprestimo.Request.nomeSolicitante#phrase.navigation = {nome solicitante} {this,PARTITIVE_ARTICLE}
+com.odm.educaciencia.emprestimo.Request.valorSolicitado#phrase.action = atribuir o valor solicitado {this,PARTITIVE_ARTICLE} a {valor solicitado}
+com.odm.educaciencia.emprestimo.Request.valorSolicitado#phrase.navigation = {valor solicitado} {this,PARTITIVE_ARTICLE}

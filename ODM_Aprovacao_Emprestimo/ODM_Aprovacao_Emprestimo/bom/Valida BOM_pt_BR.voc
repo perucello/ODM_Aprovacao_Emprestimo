@@ -1,0 +1,11 @@
+# Vocabulary Properties
+uuid = 258974e1-34b7-4949-a103-c666b6d48969
+
+# com.odm.educaciencia.emprestimo.Valida_Emprestimo
+com.odm.educaciencia.emprestimo.Valida_Emprestimo#concept.label = valida emprestimo
+com.odm.educaciencia.emprestimo.Valida_Emprestimo.idadeValidaSolicitante#phrase.action = atribuir o idade valida solicitante {this,PARTITIVE_ARTICLE} a {idade valida solicitante}
+com.odm.educaciencia.emprestimo.Valida_Emprestimo.idadeValidaSolicitante#phrase.navigation = {idade valida solicitante} {this,PARTITIVE_ARTICLE}
+com.odm.educaciencia.emprestimo.Valida_Emprestimo.nomeValidaSolicitante#phrase.action = atribuir o nome valida solicitante {this,PARTITIVE_ARTICLE} a {nome valida solicitante}
+com.odm.educaciencia.emprestimo.Valida_Emprestimo.nomeValidaSolicitante#phrase.navigation = {nome valida solicitante} {this,PARTITIVE_ARTICLE}
+com.odm.educaciencia.emprestimo.Valida_Emprestimo.valorValidaSolicitado#phrase.action = atribuir o valor valida solicitado {this,PARTITIVE_ARTICLE} a {valor valida solicitado}
+com.odm.educaciencia.emprestimo.Valida_Emprestimo.valorValidaSolicitado#phrase.navigation = {valor valida solicitado} {this,PARTITIVE_ARTICLE}

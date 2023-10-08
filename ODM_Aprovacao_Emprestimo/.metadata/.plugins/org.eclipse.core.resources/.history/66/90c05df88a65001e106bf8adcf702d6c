@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>02 Valida Idade 18_30 anos</name>
+  <uuid>028ae3fa-b43f-46fa-86a5-f9210e0c1fd0</uuid>
+  <locale>pt_BR</locale>
+  <definition><![CDATA[se 
+	 request_validaDados é verdadeiro e 
+	 o idade solicitante de solicitante_request está estritamente entre 18 e 30      
+então 
+	Apresentar "Regra: " + o nome desta regra ;
+	atribuir o idade valida solicitante de valida_emprestimo a o idade solicitante de solicitante_request ;	
+	atribuir à idade_OK o valor verdadeiro ; 
+	Apresentar "------------- VALIDA IDADE maior que 18 e menoe que 30 anos -------------" ;
+	Apresentar "Idade: " + o idade valida solicitante de valida_emprestimo ; 
+senão atribuir à idade_OK o valor falso; 
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

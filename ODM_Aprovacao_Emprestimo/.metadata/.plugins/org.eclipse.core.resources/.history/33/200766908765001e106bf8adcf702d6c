@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>variaveis</name>
+  <uuid>161f25e1-eacc-4549-b19e-db253cf9e7dd</uuid>
+  <variables name="Request" type="com.odm.educaciencia.emprestimo.Request" initialValue="" verbalization="solicitante_request"/>
+  <variables name="Response" type="com.odm.educaciencia.emprestimo.Response" initialValue="new com.odm.educaciencia.emprestimo.Response()" verbalization="response_solicitante"/>
+  <variables name="Valida_Emprestimo" type="com.odm.educaciencia.emprestimo.Valida_Emprestimo" initialValue="new com.odm.educaciencia.emprestimo.Valida_Emprestimo()" verbalization="valida_emprestimo"/>
+  <variables name="request_validaDados" type="boolean" initialValue="false" verbalization="request_validaDados"/>
+</ilog.rules.studio.model.base:VariableSet>

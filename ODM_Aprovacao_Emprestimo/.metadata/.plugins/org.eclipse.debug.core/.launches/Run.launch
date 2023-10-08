@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.ibm.rules.studio.decisionservice.launching.DecisionOperation">
+<stringAttribute key="com.ibm.rules.studio.decisionservice.ui.OPERATION_PATH" value="/ODM_Aprovacao_Emprestimo/implementação/Run.dop"/>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_FUNCT_SIGN">
+<mapEntry key="Request" value="function com.odm.educaciencia.emprestimo.Request get_Request_value()"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_FUNCT_VALUES">
+<mapEntry key="Request" value="com.odm.educaciencia.emprestimo.Request result = new com.odm.educaciencia.emprestimo.Request();&#10;result.nomeSolicitante = &quot;EducaCiencia FastCode&quot;;&#10;result.idadeSolicitante = 50;&#10;result.valorSolicitado = 2500.00;&#10;return result;&#10;"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_NAMES">
+<mapEntry key="Request" value="Request"/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_SIMPLE_VALUES">
+<mapEntry key="Request" value=""/>
+</mapAttribute>
+<mapAttribute key="ilog.rules.studio.launching.RULESET_PARAMETERS_TYPES">
+<mapEntry key="Request" value="2"/>
+</mapAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ODM_Aprovacao_Emprestimo"/>
+<listEntry value="/ODM_Aprovacao_Emprestimo"/>
+<listEntry value="/ODM_Aprovacao_Emprestimo/implementação/Run.dop"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ODM_Aprovacao_Emprestimo"/>
+</launchConfiguration>

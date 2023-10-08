@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="ODM_Emprestimo" usingRuleflow="true" ruleflowName="Fluxo_ODM" targetRuleProjectName="ODM_Aprovacao_Emprestimo">
+  <name>ODM_Emprestimo</name>
+  <uuid>6db3145a-0419-4bd0-b382-e0e580bcab50</uuid>
+  <ruleflow href="../regras/Fluxo/Fluxo_ODM.rfl#287ca039-c9c1-42f1-bbbd-5ee6ca1e1633"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="ODM_Emprestimo_extractor" validator="Validador Padrão"/>
+  <targetRuleProject href="../../ODM_Aprovacao_Emprestimo#723d3b25-65a9-41e2-b45b-56036da4cf67"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

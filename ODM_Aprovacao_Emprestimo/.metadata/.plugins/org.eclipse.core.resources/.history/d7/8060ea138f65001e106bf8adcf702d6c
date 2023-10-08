@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>04 Valida Idade maior 50 anos</name>
+  <uuid>f8dc42bf-409c-4606-b4c2-91d18f26a4e7</uuid>
+  <locale>pt_BR</locale>
+  <definition><![CDATA[se 
+	o idade solicitante de solicitante_request é no mínimo 50 
+então 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "Regra: " + o nome desta regra ;
+	atribuir o idade valida solicitante de valida_emprestimo a o idade solicitante de solicitante_request ;	
+	atribuir o risco response de response_solicitante a "Risco alto - Taxa a aplicar de 25% !";
+	atribuir o status response de response_solicitante a "Aprovado."; 
+	colocar à verdadeiro que response_solicitante é aprovado ; 
+	colocar à falso que response_solicitante é reprovado ; 
+	atribuir à idade_OK o valor verdadeiro ; 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "------------- VALIDA IDADE maior que 50 anos -------------" ;
+	Apresentar "Idade: " + o idade valida solicitante de valida_emprestimo ; 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "Nome: " + o nome solicitante de solicitante_request ; 
+	Apresentar "Idade: " + o idade valida solicitante de valida_emprestimo  ;
+	Apresentar "Valor Solicitado: R$ " + o valor solicitado de solicitante_request ;  
+	Apresentar "Observação: " + o observacao response de response_solicitante ;  
+	Apresentar "Risco: " + o risco response de response_solicitante ;
+	Apresentar "Status: " + o status response de response_solicitante  ;	
+senão atribuir à idade_OK o valor falso; 
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

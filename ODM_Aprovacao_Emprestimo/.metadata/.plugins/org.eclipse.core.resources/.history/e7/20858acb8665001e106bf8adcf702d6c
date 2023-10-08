@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>01 Valida Dados</name>
+  <uuid>cf57ec11-3a6b-47a8-ac75-c885d2f2210f</uuid>
+  <locale>pt_BR</locale>
+  <definition><![CDATA[se 
+	 o nome solicitante de solicitante_request está vazia 
+	 e o idade solicitante de solicitante_request é menor que 18
+	 e o valor solicitado de solicitante_request é menor que 1000,00
+então 
+	atribuir à request_validaDados o valor falso ;
+	atribuir o observacao response de response_solicitante a "Revise os dados: A idade minima para emprestimo é de 18 anos ou o valor solicitado é inferior à R$ 1000,00" ;
+	atribuir o risco response de response_solicitante a "invalido";
+	atribuir o status response de response_solicitante a "invalido" ; 
+	  colocar à falso que response_solicitante é aprovado ;
+	  colocar à verdadeiro que response_solicitante é reprovado ; 
+	Apresentar "Observação: " + o observacao response de response_solicitante ;  
+	Apresentar "Risco: " + o risco response de response_solicitante ;
+	Apresentar "Status: " + o status response de response_solicitante  ;
+	Apresentar "Regra: " + o nome desta regra ;
+	    
+ ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

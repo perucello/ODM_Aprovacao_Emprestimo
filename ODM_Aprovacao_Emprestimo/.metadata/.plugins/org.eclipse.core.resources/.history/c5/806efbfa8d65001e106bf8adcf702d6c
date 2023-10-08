@@ -1,0 +1,16 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/ODM_Aprovacao_Emprestimo//ODM_Aprovacao_Emprestimo_XOM"
+property uuid "eec52402-38e3-4c35-b64d-459cb740b0db"
+package com.odm.educaciencia.emprestimo;
+
+
+public class Valida_Emprestimo
+{
+    public int idadeValidaSolicitante;
+    public string nomeValidaSolicitante;
+    public double valorValidaSolicitado;
+    public Valida_Emprestimo(string arg1, int arg2, double arg3);
+    public Valida_Emprestimo();
+}
+

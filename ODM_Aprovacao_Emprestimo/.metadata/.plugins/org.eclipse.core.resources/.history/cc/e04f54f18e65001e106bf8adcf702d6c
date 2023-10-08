@@ -1,0 +1,17 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/ODM_Aprovacao_Emprestimo//ODM_Aprovacao_Emprestimo_XOM"
+property uuid "67c0daaf-04e1-4d9f-8d71-20b1da8bd63c"
+package com.odm.educaciencia.emprestimo;
+
+
+public class Response
+{
+    public boolean aprovado;
+    public string observacaoResponse;
+    public string riscoResponse;
+    public string statusResponse;
+    public Response();
+    public Response(string arg1, string arg2, string arg3, boolean arg4);
+}
+

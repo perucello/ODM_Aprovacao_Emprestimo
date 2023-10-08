@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>03 Valida Idade 30_50 anos</name>
+  <uuid>2556ec1a-e77a-42ef-9a8c-35785bc7f469</uuid>
+  <locale>pt_BR</locale>
+  <definition><![CDATA[se 
+	 e o idade solicitante de Request  é maior que 30 
+	 e o idade solicitante de Request é menor que 50
+então 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "Regra: " + o nome desta regra ;
+	atribuir o idade valida solicitante de Valida_Emprestimo  a o idade solicitante de Request  ;	
+	atribuir o risco response de Response  a "Risco alto - Taxa a aplicar de 25% !";
+	atribuir o status response de Response  a "Aprovado."; 
+	colocar à verdadeiro que Response  é aprovado ; 
+	atribuir à idade_OK o valor verdadeiro ; 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "------------- VALIDA IDADE maior que 30 até 50 anos -------------" ;
+	Apresentar "Idade: " + o idade valida solicitante de Valida_Emprestimo  ; 
+	Apresentar "-------------------------------------------------------------------------" ;	 
+	Apresentar "Nome: " + o nome solicitante de Request  ; 
+	Apresentar "Idade: " + o idade valida solicitante de Valida_Emprestimo   ;
+	Apresentar "Valor Solicitado: R$ " + o valor solicitado de Request  ;  
+	Apresentar "Observação: " + o observacao response de Response  ;  
+	Apresentar "Risco: " + o risco response de Response  ;
+	Apresentar "Status: " + o status response de Response   ;	
+senão 
+	Apresentar "senao regra 3";  
+
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

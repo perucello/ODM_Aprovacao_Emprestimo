@@ -1,0 +1,17 @@
+package com.odm.educaciencia.emprestimo;
+
+/* ********************************************************************** 
+*************** PROJETO EDUUCACIENCIA ***********************************
+*************************************************************************
+****** Data: 07/10/2023
+****** Projeto: APROVACAO EMPRESTIMO
+****** Versão: 1.0
+****** Atualização: 07/10/2023
+************************************************************************/
+
+public class Request {
+
+	public String nomeSolicitante;
+	public int idadeSolicitante;
+	public double valorSolicitado;
+}

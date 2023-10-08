@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Fluxo_ODM</name>
+  <uuid>d60afb30-969b-4466-92c7-1b9b9fa44a93</uuid>
+  <locale>pt_BR</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Valida Dados" Ordering="Default">
+        <InitialActions/>
+        <RuleList>
+          <Rule Uuid="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Regras 18 anos ate 30 anos" Ordering="Default">
+        <RuleList>
+          <Rule Uuid="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+        </RuleList>
+      </RuleTask>
+      <ActionTask Identifier="Output">
+        <FinalActions Language="bal"><![CDATA[  ]]></FinalActions>
+        <Actions Language="bal"><![CDATA[Apresentar "------------- RESPONSE -------------" ;
+Apresentar "Observação: " + o observacao response de Response  ;  
+Apresentar "Risco: " + o risco response de Response  ;
+Apresentar "Status: " + o status response de Response   ;]]></Actions>
+      </ActionTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Regra 30 anos ate 50 anos" Ordering="Default">
+        <RuleList>
+          <Rule Uuid="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+        </RuleList>
+      </RuleTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Regra maior que 50 anos" Ordering="Default">
+        <RuleList>
+          <Rule Uuid="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </RuleList>
+      </RuleTask>
+      <StopTask Identifier="task_2"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_2" Task="Valida Dados"/>
+      <TaskNode Identifier="node_10" Task="task_0"/>
+      <TaskNode Identifier="node_11" Task="Regras 18 anos ate 30 anos"/>
+      <TaskNode Identifier="node_12" Task="task_2"/>
+      <TaskNode Identifier="node_5" Task="Output"/>
+      <TaskNode Identifier="node_0" Task="Regra 30 anos ate 50 anos"/>
+      <TaskNode Identifier="node_1" Task="Regra maior que 50 anos"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_12" Source="node_10" Target="node_2"/>
+      <Transition Identifier="transition_13" Source="node_2" Target="node_11">
+        <Conditions Language="bal"><![CDATA[request_validaDados é verdadeiro ]]></Conditions>
+      </Transition>
+      <Transition Identifier="transition_15" Source="node_2" Target="node_12"/>
+      <Transition Identifier="transition_16" Source="node_5" Target="node_12"/>
+      <Transition Identifier="transition_14" Source="node_11" Target="node_0"/>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_1"/>
+      <Transition Identifier="transition_1" Source="node_1" Target="node_5"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="pt_BR">
+      <Data Name="node_2#height">53.12626</Data>
+      <Data Name="node_1#height">40.0</Data>
+      <Data Name="node_0#height">40.0</Data>
+      <Data Name="node_5#name">node_3</Data>
+      <Data Name="node_2#name">node_1</Data>
+      <Data Name="node_5#height">40.0</Data>
+      <Data Name="node_10#height">21.0</Data>
+      <Data Name="node_11#height">40.0</Data>
+      <Data Name="node_12#height">22.0</Data>
+      <Data Name="node_12#width">22.0</Data>
+      <Data Name="node_12#y">545.1262</Data>
+      <Data Name="node_2#width">261.00525</Data>
+      <Data Name="node_10#x">130.50261</Data>
+      <Data Name="node_10#y">10.5</Data>
+      <Data Name="node_11#x">222.00203</Data>
+      <Data Name="node_11#y">194.12625</Data>
+      <Data Name="node_12#x">130.50262</Data>
+      <Data Name="node_0#width">312.99768</Data>
+      <Data Name="node_5#x">222.002</Data>
+      <Data Name="node_5#y">464.12628</Data>
+      <Data Name="node_5#width">303.76697</Data>
+      <Data Name="node_11#name">node_1</Data>
+      <Data Name="node_0#x">222.00201</Data>
+      <Data Name="node_0#y">284.12625</Data>
+      <Data Name="node_1#x">222.00201</Data>
+      <Data Name="node_2#x">130.50262</Data>
+      <Data Name="node_1#y">374.12625</Data>
+      <Data Name="node_2#y">97.563126</Data>
+      <Data Name="node_1#name">node_1</Data>
+      <Data Name="node_10#name">node_0</Data>
+      <Data Name="node_11#width">313.99863</Data>
+      <Data Name="node_1#width">315.99756</Data>
+      <Data Name="node_12#name">node_2</Data>
+      <Data Name="node_0#name">node_1</Data>
+      <Data Name="node_10#width">20.99997</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

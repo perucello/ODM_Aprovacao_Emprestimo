@@ -1,0 +1,22 @@
+package com.odm.educaciencia.emprestimo;
+
+/* ********************************************************************** 
+*************** PROJETO EDUUCACIENCIA ***********************************
+*************************************************************************
+****** Data: 07/10/2023
+****** Projeto: APROVACAO EMPRESTIMO
+****** Versão: 1.0
+****** Atualização: 07/10/2023
+************************************************************************/
+
+public class Response {
+	public String statusResponse;
+	public String riscoResponse;
+	public String observacaoResponse;
+	public boolean aprovado = false;
+	public boolean reprovado = false;
+	
+	
+	
+
+}

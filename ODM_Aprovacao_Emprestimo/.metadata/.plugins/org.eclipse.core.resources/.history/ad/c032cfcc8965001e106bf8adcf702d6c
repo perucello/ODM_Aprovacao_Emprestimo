@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Fluxo_ODM</name>
+  <uuid>287ca039-c9c1-42f1-bbbd-5ee6ca1e1633</uuid>
+  <locale>pt_BR</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="Valida Dados" Ordering="Default"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="idade 18 ~ 30 anos" Ordering="Default"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="idade 30 ~ 50 anos " Ordering="Default"/>
+      <ActionTask Identifier="Output">
+        <Actions Language="bal"><![CDATA[Apresentar "------------- OUTPUT -------------" ;
+Apresentar "Nome: " + o nome solicitante de solicitante_request ; 
+Apresentar "Idade: " + o idade solicitante de solicitante_request ;
+Apresentar "Valor Solicitado: R$ " + o valor solicitado de solicitante_request ;  
+Apresentar "Observação: " + o observacao response de response_solicitante ;  
+Apresentar "Risco: " + o risco response de response_solicitante ;
+Apresentar "Status: " + o status response de response_solicitante  ;]]></Actions>
+      </ActionTask>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="idade maior 50 " Ordering="Default"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_7" Ordering="Default"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_8" Ordering="Default"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_9" Ordering="Default"/>
+      <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_10" Ordering="Default"/>
+      <StopTask Identifier="task_1"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_0"/>
+      <TaskNode Identifier="node_1" Task="task_1"/>
+      <TaskNode Identifier="node_2" Task="Valida Dados"/>
+      <TaskNode Identifier="node_3" Task="idade 18 ~ 30 anos"/>
+      <TaskNode Identifier="node_4" Task="idade 30 ~ 50 anos "/>
+      <TaskNode Identifier="node_5" Task="Output"/>
+      <TaskNode Identifier="node_6" Task="idade maior 50 "/>
+      <TaskNode Identifier="node_7" Task="task_7"/>
+      <TaskNode Identifier="node_8" Task="task_8"/>
+      <TaskNode Identifier="node_9" Task="task_9"/>
+      <TaskNode Identifier="node_10" Task="task_10"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_0" Source="node_0" Target="node_2"/>
+      <Transition Identifier="transition_1" Source="node_2" Target="node_3"/>
+      <Transition Identifier="transition_2" Source="node_3" Target="node_4"/>
+      <Transition Identifier="transition_4" Source="node_5" Target="node_1"/>
+      <Transition Identifier="transition_5" Source="node_2" Target="node_1">
+        <Conditions Language="bal"><![CDATA[request_validaDados é falso ]]></Conditions>
+      </Transition>
+      <Transition Identifier="transition_6" Source="node_4" Target="node_6"/>
+      <Transition Identifier="transition_7" Source="node_6" Target="node_7"/>
+      <Transition Identifier="transition_9" Source="node_7" Target="node_8"/>
+      <Transition Identifier="transition_10" Source="node_9" Target="node_10"/>
+      <Transition Identifier="transition_11" Source="node_8" Target="node_9"/>
+      <Transition Identifier="transition_13" Source="node_10" Target="node_5"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="pt_BR">
+      <Data Name="node_2#height">52.732224</Data>
+      <Data Name="node_4#width">195.98102</Data>
+      <Data Name="node_1#height">21.000006</Data>
+      <Data Name="node_3#height">41.08853</Data>
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_4#height">40.0</Data>
+      <Data Name="node_7#y">464.82074</Data>
+      <Data Name="node_9#x">286.42706</Data>
+      <Data Name="node_9#y">644.82074</Data>
+      <Data Name="node_2#name">node_1</Data>
+      <Data Name="transition_1#label">Dados de Entrada Validos</Data>
+      <Data Name="node_5#height">40.0</Data>
+      <Data Name="node_6#height">40.0</Data>
+      <Data Name="node_7#height">40.0</Data>
+      <Data Name="node_10#height">40.0</Data>
+      <Data Name="node_7#width">200.98059</Data>
+      <Data Name="node_8#height">40.0</Data>
+      <Data Name="node_9#height">40.0</Data>
+      <Data Name="node_10#x">286.42706</Data>
+      <Data Name="node_10#y">734.82074</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_3#y">194.27647</Data>
+      <Data Name="node_5#x">286.42706</Data>
+      <Data Name="node_5#y">824.82074</Data>
+      <Data Name="node_7#x">286.427</Data>
+      <Data Name="node_1#x">197.98529</Data>
+      <Data Name="node_8#name">node_1</Data>
+      <Data Name="node_1#y">905.32074</Data>
+      <Data Name="node_3#x">286.42703</Data>
+      <Data Name="node_1#name">node_2</Data>
+      <Data Name="node_3#width">190.98157</Data>
+      <Data Name="node_4#name">node_1</Data>
+      <Data Name="node_7#name">node_1</Data>
+      <Data Name="node_6#width">199.98071</Data>
+      <Data Name="node_10#width">209.9797</Data>
+      <Data Name="node_8#x">286.42706</Data>
+      <Data Name="node_8#y">554.82074</Data>
+      <Data Name="node_5#name">node_3</Data>
+      <Data Name="node_9#width">210.97961</Data>
+      <Data Name="node_2#width">395.9706</Data>
+      <Data Name="node_4#x">286.42706</Data>
+      <Data Name="node_4#y">284.82074</Data>
+      <Data Name="node_6#x">286.427</Data>
+      <Data Name="node_5#width">303.76697</Data>
+      <Data Name="node_6#y">374.82074</Data>
+      <Data Name="node_0#x">197.98532</Data>
+      <Data Name="node_0#y">10.5</Data>
+      <Data Name="node_2#x">197.9853</Data>
+      <Data Name="node_2#y">97.36611</Data>
+      <Data Name="node_10#name">node_1</Data>
+      <Data Name="node_8#width">206.97998</Data>
+      <Data Name="node_1#width">20.999992</Data>
+      <Data Name="node_6#name">node_1</Data>
+      <Data Name="node_9#name">node_1</Data>
+      <Data Name="node_0#name">node_0</Data>
+      <Data Name="transition_5#label">request_validadados = falso</Data>
+      <Data Name="node_3#name">node_1</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties/>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

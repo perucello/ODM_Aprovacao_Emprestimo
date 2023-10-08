@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Fluxo</name>
+  <uuid>87c8630b-1762-4435-a96b-80ca21187115</uuid>
+</ilog.rules.studio.model.base:RulePackage>

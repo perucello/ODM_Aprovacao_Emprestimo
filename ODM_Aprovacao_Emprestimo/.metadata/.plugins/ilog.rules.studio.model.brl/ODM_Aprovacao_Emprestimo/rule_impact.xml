@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/GETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/SETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Request/nomeSolicitante/GETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Request">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/SETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/aprovado/PREDICATE_SETTER#0">
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Request/valorSolicitado/GETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo">
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/GETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Request/idadeSolicitante/GETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/GETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/SETTER#0">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+        <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo/idadeValidaSolicitante/SETTER#0">
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58">
+            <vocElt id="com.odm.educaciencia.emprestimo.Request"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Request/valorSolicitado/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Request/idadeSolicitante/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Request/nomeSolicitante/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/SETTER#0"/>
+        </rule>
+        <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44">
+            <vocElt id="com.odm.educaciencia.emprestimo.Request"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/aprovado/PREDICATE_SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Request/idadeSolicitante/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo/idadeValidaSolicitante/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/SETTER#0"/>
+        </rule>
+        <rule id="376e2840-0505-406d-91b4-35c8a03f6f02">
+            <vocElt id="com.odm.educaciencia.emprestimo.Request"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/aprovado/PREDICATE_SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Request/idadeSolicitante/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo/idadeValidaSolicitante/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/SETTER#0"/>
+        </rule>
+        <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb">
+            <vocElt id="com.odm.educaciencia.emprestimo.Request"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/riscoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/aprovado/PREDICATE_SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Request/idadeSolicitante/GETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/observacaoResponse/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Valida_Emprestimo/idadeValidaSolicitante/SETTER#0"/>
+            <vocElt id="com.odm.educaciencia.emprestimo.Response/statusResponse/SETTER#0"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="Response">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </param>
+        <param id="idade_ok">
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </param>
+        <param id="Request">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </param>
+        <param id="request_validaDados">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+        </param>
+        <param id="Valida_Emprestimo">
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58">
+            <param id="Response"/>
+            <param id="Request"/>
+            <param id="request_validaDados"/>
+        </rule>
+        <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44">
+            <param id="Response"/>
+            <param id="idade_ok"/>
+            <param id="Request"/>
+            <param id="request_validaDados"/>
+            <param id="Valida_Emprestimo"/>
+        </rule>
+        <rule id="376e2840-0505-406d-91b4-35c8a03f6f02">
+            <param id="Response"/>
+            <param id="idade_ok"/>
+            <param id="Request"/>
+            <param id="request_validaDados"/>
+            <param id="Valida_Emprestimo"/>
+        </rule>
+        <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb">
+            <param id="Response"/>
+            <param id="idade_ok"/>
+            <param id="Request"/>
+            <param id="Valida_Emprestimo"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="f08a6841-4b13-4f61-9170-983efca461ca">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/ODM_Aprovacao_Emprestimo/bom/Request BOM_pt_BR.voc" id="10facc47-c6b2-44c3-9239-0359eb6dc690">
+            <rule id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+            <rule id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+            <rule id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+            <rule id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/ODM_Aprovacao_Emprestimo/regras/Regras_Emprestimo/01 Valida Dados.brl" id="73322d4d-946f-4011-b63f-7dbce7a48c58"/>
+        <resource file="/ODM_Aprovacao_Emprestimo/regras/Regras_Emprestimo/04 Valida Idade maior 50 anos.brl" id="c77537c5-377f-44b4-a3b1-24594e73d7fb"/>
+        <resource file="/ODM_Aprovacao_Emprestimo/regras/Regras_Emprestimo/03 Valida Idade 30_50 anos.brl" id="b8b755d5-4f91-4562-99cc-47fd2604ea44"/>
+        <resource file="/ODM_Aprovacao_Emprestimo/regras/Regras_Emprestimo/02 Valida Idade 18_30 anos.brl" id="376e2840-0505-406d-91b4-35c8a03f6f02"/>
+    </resourceTable>
+</impactTables>
